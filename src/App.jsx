@@ -15,7 +15,7 @@ function App() {
       {data.length}
       <div className="card-container">
         {data.map((element) => (
-          <Card element={element.show} key={element.score} />
+          <Card element={element.show} key={element.show.id} />
         ))}
       </div>
     </div>
