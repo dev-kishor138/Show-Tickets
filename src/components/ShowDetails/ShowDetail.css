@@ -14,3 +14,99 @@
     height: 100%;
     object-fit: contain;
 }
+
+
+
+
+/* Modals Design */
+.show-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.show-modal-content {
+    width: 600px;
+    position: relative;
+    background-color: #FAF9F6;
+    padding: 4.5rem 2.5rem 2.5rem;
+    border-radius: 1.5rem;
+    color: #000;
+}
+
+.show-modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: #333333;
+    cursor: pointer;
+}
+
+.modal-description {
+    display: flex;
+}
+
+/* Active Modal  */
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*========== BreakPoints ==========*/
+/* For Large Device */
+/* @media screen and (max-width: 992px) {
+    .services-container {
+        grid-template-columns: repeat(3, 218px);
+    }
+} */
+
+/* For Medium Device */
+/* @media screen and (max-width: 768px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-content {
+        padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+    }
+
+    .services-icon {
+        font-size: 1.5rem;
+    }
+} */
+
+/* @media screen and (max-width: 576px) {
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services-modal-content {
+        padding: 4.5rem 1.5rem 2.5rem;
+    }
+
+    .services-modal-description {
+        padding: 0;
+    }
+} */
+
+/* For Small Device
+@media screen and (max-width: 350px) {
+
+
+    .services-content {
+        padding-right: 6rem;
+    }
+} */
