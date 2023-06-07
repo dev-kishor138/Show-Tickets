@@ -1,6 +1,6 @@
 .card {
     position: relative;
-    width: 320px;
+    width: 300px;
     height: 450px;
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
@@ -91,4 +91,13 @@
 
 .card .show-details .runtime {
     margin-bottom: 10px;
+}
+
+
+
+/* Responsive Design for mobile device */
+@media (max-width: 512px) {
+    .card {
+        width: 100%;
+    }
 }

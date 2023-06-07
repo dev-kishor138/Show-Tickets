@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 
 const Card = ({ element }) => {
   // console.log(element);
+  // Destructuring
   const { name, image, genres, rating, runtime, id } = element;
+
   return (
     <div className="card">
       <div className="show-img">
@@ -28,6 +30,7 @@ const Card = ({ element }) => {
           <p className="runtime">Runtime: 50</p>
         )}
 
+        {/* show uniqe data using Link  */}
         <Link to={`/show-details/${id}`}>
           <button>More Info</button>
         </Link>

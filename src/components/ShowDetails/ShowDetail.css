@@ -1,3 +1,10 @@
+.full-width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .movie-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -13,6 +20,12 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.movie-details {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px 20px;
 }
 
 
@@ -68,6 +81,16 @@
 
 .modal-form {
     position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form {
+    width: 80%;
 }
 
 .input-box {
@@ -86,6 +109,7 @@ textarea {
     resize: none;
 }
 
+
 .submit-button {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -95,14 +119,28 @@ textarea {
 }
 
 
-/* ========== BreakPoints ==========*/
-/* For Large Device */
-@media screen and (max-width: 992px) {}
+
+
 
 /* For Medium Device */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .movie-container {
+        grid-template-columns: 1fr;
+    }
 
-@media screen and (max-width: 576px) {}
+}
 
-/* For Small Device */
-@media screen and (max-width: 350px) {}
+@media screen and (max-width: 576px) {
+    .modal-description {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .modal-img {
+        display: none;
+    }
+
+    form {
+        padding: 20px 0;
+    }
+}
