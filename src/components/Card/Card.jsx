@@ -1,8 +1,10 @@
 import React from "react";
 import "./Card.css";
+import { Link } from "react-router-dom";
 
 const Card = ({ element }) => {
-  const { name, image, genres, rating, runtime } = element;
+  // console.log(element);
+  const { name, image, genres, rating, runtime, id } = element;
   return (
     <div className="card">
       <div className="show-img">
@@ -26,7 +28,9 @@ const Card = ({ element }) => {
           <p className="runtime">Runtime: 50</p>
         )}
 
-        <button>More Info</button>
+        <Link to={`/show-details/${id}`}>
+          <button>More Info</button>
+        </Link>
       </div>
     </div>
   );
