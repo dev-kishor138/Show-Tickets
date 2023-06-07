@@ -6,7 +6,7 @@
 
 .movie-banner {
     width: 100%;
-    height: 500px;
+    height: 450px;
 }
 
 .movie-banner img {
@@ -36,6 +36,13 @@
     transition: 0.3s;
 }
 
+/* Active Modal  */
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+
 .show-modal-content {
     width: 600px;
     position: relative;
@@ -55,58 +62,47 @@
 }
 
 .modal-description {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-/* Active Modal  */
-.active-modal {
-    opacity: 1;
-    visibility: visible;
+.modal-form {
+    position: relative;
+}
+
+.input-box {
+    display: grid;
+    gap: 3px;
+    margin-bottom: 20px;
+}
+
+.input-box input,
+textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+    resize: none;
+}
+
+.submit-button {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 
-/*========== BreakPoints ==========*/
+/* ========== BreakPoints ==========*/
 /* For Large Device */
-/* @media screen and (max-width: 992px) {
-    .services-container {
-        grid-template-columns: repeat(3, 218px);
-    }
-} */
+@media screen and (max-width: 992px) {}
 
 /* For Medium Device */
-/* @media screen and (max-width: 768px) {
-    .services-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media screen and (max-width: 768px) {}
 
-    .services-content {
-        padding: 3.5rem 0.5rem 1.25rem 1.5rem;
-    }
+@media screen and (max-width: 576px) {}
 
-    .services-icon {
-        font-size: 1.5rem;
-    }
-} */
-
-/* @media screen and (max-width: 576px) {
-    .services-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .services-modal-content {
-        padding: 4.5rem 1.5rem 2.5rem;
-    }
-
-    .services-modal-description {
-        padding: 0;
-    }
-} */
-
-/* For Small Device
-@media screen and (max-width: 350px) {
-
-
-    .services-content {
-        padding-right: 6rem;
-    }
-} */
+/* For Small Device */
+@media screen and (max-width: 350px) {}

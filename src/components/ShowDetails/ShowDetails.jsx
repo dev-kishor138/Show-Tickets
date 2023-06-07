@@ -51,7 +51,7 @@ const ShowDetails = () => {
         </button>
       </div>
 
-      {/* modals here */}
+      {/* modals */}
       <div className={modal === 1 ? "show-modal active-modal" : "show-modal"}>
         <div className="show-modal-content">
           <i
@@ -77,7 +77,7 @@ const ShowDetails = () => {
               </div>
               <div className="input-box">
                 <label htmlFor="">Message</label>
-                <textarea name="message" id="" cols="30" rows="10"></textarea>
+                <textarea name="message" id=""></textarea>
               </div>
               <button className="submit-button">Submit</button>
             </form>
