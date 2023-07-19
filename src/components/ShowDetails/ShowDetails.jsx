@@ -34,7 +34,7 @@ const ShowDetails = () => {
     <div className="full-width">
       <div className="container movie-container">
         <div className="movie-banner">
-          <img src={image.original} alt="" />
+          <img src={image?.original} alt="" />
         </div>
         <div className="movie-details">
           <h2>{name}</h2>
