@@ -10,7 +10,7 @@ const Card = ({ element }) => {
   return (
     <div className="card">
       <div className="show-img">
-        <img src='' alt="" />
+        <img src={image?.original} alt="" />
       </div>
       <div className="show-details">
         <h3 className="show-name">{name}</h3>
